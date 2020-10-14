@@ -71,6 +71,17 @@
           <td> capitalizado</td>
           <td>{{nombre2 | capitalizado:true }}</td>
         </tr>
+        <tr>
+          <td>{{nombre}}</td>
+          <td> 
+            contrasenia:{{activar}}
+            <br>
+            <button class="btn btn-outline-primary" (click)="activar = !activar">
+              {{activar? 'desactivar' : 'activar'}}
+            </button>
+          </td>
+          <td>{{nombre | contrasenia:activar}}</td>
+        </tr>
       </tbody>
     </table>
   </div>

@@ -31,4 +31,6 @@ export class AppComponent {
   fecha: Date = new Date()
 
   videoStr: string = 'https://www.youtube.com/embed/Kp_n5DRinb0'
+
+  activar: boolean = true
 }
